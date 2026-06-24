@@ -22,7 +22,7 @@ import {
   slideInRight,
 } from "@/lib/motion";
 
-// ─── Inline section data ───────────────────────────────────────────────
+// ─── Inline section data ─────────────────────────────────────────────────────
 
 const valueProps = [
   {
@@ -84,7 +84,7 @@ const stats = [
   { value: "98%", label: "Satisfaction Rate" },
 ];
 
-// ─── Sub-components ────────────────────────────────────────────────────
+// ─── Sub-components ────────────────────────────────────────────
 
 function StarRating({ rating, count }: { rating: number; count: number }) {
   return (
@@ -195,7 +195,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
   );
 }
 
-// ─── Page ───────────────────────────────────────────────────────────────────
+// ─── Page ─────────────────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -207,7 +207,7 @@ export default function HomePage() {
 
   return (
     <main className="overflow-x-hidden">
-      {/* ── HERO ───────────────────────────────────────────────────── */}
+      {/* ── HERO ────────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-center bg-[#1a1a2e] overflow-hidden">
         {/* Background texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,rgba(233,69,96,0.18),transparent)]" />
@@ -352,7 +352,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* ── VALUE PROPS ────────────────────────────────────────────────── */}
+      {/* ── VALUE PROPS ─────────────────────────────────────────────────────── */}
       <section className="bg-white border-b border-black/5">
         <motion.div
           variants={staggerContainer}
@@ -386,7 +386,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* ── CATEGORIES ─────────────────────────────────────────────────── */}
+      {/* ── CATEGORIES ──────────────────────────────────────────────────────── */}
       <section id="categories" className="bg-[#f5f5f5] py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -485,7 +485,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── PRODUCTS ────────────────────────────────────────────────────── */}
+      {/* ── PRODUCTS ────────────────────────────────────────────────────────── */}
       <section id="products" className="bg-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
@@ -560,7 +560,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DEALS BANNER ─────────────────────────────────────────────────── */}
+      {/* ── DEALS BANNER ──────────────────────────────────────────────────────── */}
       <section id="deals" className="relative bg-[#1a1a2e] overflow-hidden py-20 md:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_30%_50%,rgba(233,69,96,0.22),transparent)]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -666,7 +666,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ────────────────────────────────────────────────── */}
+      {/* ── TESTIMONIALS ─────────────────────────────────────────────────────── */}
       <section className="bg-[#f5f5f5] py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -742,7 +742,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── ABOUT / BRAND STORY ────────────────────────────────────────────── */}
+      {/* ── ABOUT / BRAND STORY ────────────────────────────────────────────────── */}
       <section id="about" className="bg-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -852,7 +852,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── NEWSLETTER CTA ───────────────────────────────────────────────── */}
+      {/* ── NEWSLETTER CTA ─────────────────────────────────────────────────────── */}
       <section className="bg-[#1a1a2e] py-20 md:py-28 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_70%_at_50%_50%,rgba(233,69,96,0.15),transparent)]" />
         <motion.div
