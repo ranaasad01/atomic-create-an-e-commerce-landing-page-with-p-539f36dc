@@ -22,7 +22,7 @@ import {
   slideInRight,
 } from "@/lib/motion";
 
-// ─── Inline section data ───────────────────────────────────────────────────
+// ─── Inline section data ───────────────────────────────────────────────
 
 const valueProps = [
   {
@@ -84,7 +84,7 @@ const stats = [
   { value: "98%", label: "Satisfaction Rate" },
 ];
 
-// ─── Sub-components ────────────────────────────────────────────────────────
+// ─── Sub-components ────────────────────────────────────────────────────
 
 function StarRating({ rating, count }: { rating: number; count: number }) {
   return (
@@ -195,7 +195,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
   );
 }
 
-// ─── Page ──────────────────────────────────────────────────────────────────
+// ─── Page ───────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -207,7 +207,7 @@ export default function HomePage() {
 
   return (
     <main className="overflow-x-hidden">
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
+      {/* ── HERO ───────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-center bg-[#1a1a2e] overflow-hidden">
         {/* Background texture */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,rgba(233,69,96,0.18),transparent)]" />
@@ -352,7 +352,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* ── VALUE PROPS ──────────────────────────────────────────────────── */}
+      {/* ── VALUE PROPS ────────────────────────────────────────────────── */}
       <section className="bg-white border-b border-black/5">
         <motion.div
           variants={staggerContainer}
@@ -386,7 +386,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* ── CATEGORIES ───────────────────────────────────────────────────── */}
+      {/* ── CATEGORIES ─────────────────────────────────────────────────── */}
       <section id="categories" className="bg-[#f5f5f5] py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -465,7 +465,7 @@ export default function HomePage() {
                 <img
                   src={cat.image}
                   alt={cat.label}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   style={{ minHeight: "180px" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a2e]/80 via-[#1a1a2e]/20 to-transparent" />
@@ -485,7 +485,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── PRODUCTS ─────────────────────────────────────────────────────── */}
+      {/* ── PRODUCTS ────────────────────────────────────────────────────── */}
       <section id="products" className="bg-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
@@ -593,7 +593,7 @@ export default function HomePage() {
                 className="text-white/60 text-lg leading-relaxed max-w-md text-pretty"
               >
                 Our biggest seasonal sale is live. Grab premium fashion,
-                electronics, and lifestyle picks at prices that won't last.
+                electronics, and lifestyle picks at prices that won&apos;t last.
               </motion.p>
               <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
                 <motion.a
@@ -666,7 +666,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
+      {/* ── TESTIMONIALS ────────────────────────────────────────────────── */}
       <section className="bg-[#f5f5f5] py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -731,7 +731,7 @@ export default function HomePage() {
                     <p className="text-xs text-[#1a1a2e]/45">{t.location}</p>
                   </div>
                   <div className="ml-auto">
-                    <span className="text-xs text-[#e94560] font-medium bg-[#e94560]/8 px-2.5 py-1 rounded-full">
+                    <span className="text-xs text-[#e94560] font-medium bg-[#e94560]/10 px-2.5 py-1 rounded-full">
                       Verified
                     </span>
                   </div>
@@ -742,7 +742,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── ABOUT / BRAND STORY ──────────────────────────────────────────── */}
+      {/* ── ABOUT / BRAND STORY ────────────────────────────────────────────── */}
       <section id="about" className="bg-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
